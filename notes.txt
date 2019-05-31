@@ -1,3 +1,15 @@
 Small drop down arrow next to viewport options (top left of level view window) and select "Show FPS"
 
 To move quickly, hold right click and use WASD
+
+To paint a landscape.....
+	1. create a new material in the content pane.
+	2. Open blueprint and add a "Layer Blend"
+		2a. Go into details and add some layers.
+	3. Connect out of Layer Blend to "Base Color" of the pre-populated "Landscape" node
+	4. Add "Vector Parameter" nodes. Pick colors and hook white out to Layer Blend input
+	5. Save material.
+	6. "World Outliner" windows -> Click landscape -> Details Windows -> Landscape pane -> "Landscape Material" -> Assign the newly created material
+	7. "Modes" window -> Paint -> Target Layers pane -> Add some layers -> Click the small + icon and accept defaults
+	8. Now with whichever layer you'd like from your material, use the paint tool to paint the landscape.
+
