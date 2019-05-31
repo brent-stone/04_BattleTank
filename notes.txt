@@ -1,0 +1,3 @@
+Small drop down arrow next to viewport options (top left of level view window) and select "Show FPS"
+
+To move quickly, hold right click and use WASD
