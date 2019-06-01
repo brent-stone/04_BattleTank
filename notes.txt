@@ -13,3 +13,18 @@ To paint a landscape.....
 	7. "Modes" window -> Paint -> Target Layers pane -> Add some layers -> Click the small + icon and accept defaults
 	8. Now with whichever layer you'd like from your material, use the paint tool to paint the landscape.
 
+Press "C" to comment in blueprint [will comment selected nodes]
+
+To add sockets to a mesh and assign meshes to them...
+	1. Create a blueprint
+	2. Add Component -> Static Mesh
+	3. In details of new component, select the model from the Static Mesh pane. compile
+	4. Back in main editor's Content, edit the static mesh you just assigned
+	5. In Details window go to Socket Manager pane. Add Socket.
+	6. Use the preview static mesh to adjust socket position as needed
+	7. Back in the Blueprint, add another static mesh component
+	8. Drag and drop that additional mesh to be a child of the earlier mesh.
+	9. In the Details windows of the additional mesh, under Sockets pane, assign "Parent Socket" to be the socket you added in steps 5-6
+	10. Repeat the above steps as needed.
+
+
