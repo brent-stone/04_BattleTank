@@ -37,3 +37,11 @@ To keep the rotations sensible, add a Scene component to the tank blueprint. Per
 - Update blueprint so that yaw is controlled by the AzimuthGimbal, pitch controlled by the spring arm
 - If you'd like to keep the roll locked to the landscape horizon when driving over uneven terrain, go to Details window of the Spring Arm and de-select "inherit roll" under the "Camera Settings" pane.
 
+To add a UI element like an aim target
+-> Content Browser -> Add New -> User Interface -> Widget Blueprint
+-> Add in an image, for example, and be sure to adjust the anchor point so that it appears at a predictable area of the screen for different screen sizes (e.g. achors min/max @ 0.5)
+-> Content Browser -> Add New -> Blueprint Class -> Player Controller
+-> In Player controller BP Event Graph -> Create Player UI Widget -> Hook Event BeginPlay to execute input & select the class of widget you created
+-> "Add to Viewport" node with output of UI Widget hooked into it
+-> Go to root game mode blueprint -> Update "Player Controller Class" to the Player Controller blueprint you just hooked the widget into
+
