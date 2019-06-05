@@ -32,3 +32,8 @@ Option 1: Content Browser -> C++ Classes -> BattleTank -> BattleTank GameModeBas
 Option 2: Blueprints menu -> World Override -> Create -> BattleTankGameMode
 -> Once new BP class opens -> Classes pane -> Default Pawn Class -> Select the tank blueprint
 
+To keep the rotations sensible, add a Scene component to the tank blueprint. Perhaps name it AzimuthGimbal
+- Make spring arm + camera tree a child
+- Update blueprint so that yaw is controlled by the AzimuthGimbal, pitch controlled by the spring arm
+- If you'd like to keep the roll locked to the landscape horizon when driving over uneven terrain, go to Details window of the Spring Arm and de-select "inherit roll" under the "Camera Settings" pane.
+
