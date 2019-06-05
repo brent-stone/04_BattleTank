@@ -27,4 +27,8 @@ To add sockets to a mesh and assign meshes to them...
 	9. In the Details windows of the additional mesh, under Sockets pane, assign "Parent Socket" to be the socket you added in steps 5-6
 	10. Repeat the above steps as needed.
 
+To set tank as default pawn...
+Option 1: Content Browser -> C++ Classes -> BattleTank -> BattleTank GameModeBase -> right-click -> "Create Blueprint class based on ...."
+Option 2: Blueprints menu -> World Override -> Create -> BattleTankGameMode
+-> Once new BP class opens -> Classes pane -> Default Pawn Class -> Select the tank blueprint
 
