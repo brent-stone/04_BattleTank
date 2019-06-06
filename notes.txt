@@ -45,3 +45,10 @@ To add a UI element like an aim target
 -> "Add to Viewport" node with output of UI Widget hooked into it
 -> Go to root game mode blueprint -> Update "Player Controller Class" to the Player Controller blueprint you just hooked the widget into
 
+To load a level using a button in a menu level
+- Go to the button you want to trigger the level in the Widget's Blueprint Designer window. Scroll to bottom of details to "on-click" with the big green + button
+- The event graph will be opened. Hook "On Clicked ..." to an "Open Level" node. Copy-paste the level's name that should be opened into the "Level Name" field
+- Create a custom event in the menu widget's blueprint graph. E.G. "Widget Ready"
+- In the Menu level's main blueprint, hook "create .... widget" return value to the custom event. Hook execution-out from the last node in level blueprint into start execution of the custom widget
+
+- 
